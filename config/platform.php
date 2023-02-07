@@ -109,8 +109,12 @@ return [
     */
 
     'resource'      => [
-        'stylesheets' => [],
-        'scripts'     => [],
+        'stylesheets' => [
+            '/css/tom-select.default.css'
+        ],
+        'scripts'     => [
+            '/js/app.js'
+        ],
     ],
 
     /*

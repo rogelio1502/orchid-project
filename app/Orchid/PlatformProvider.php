@@ -10,6 +10,7 @@ use Orchid\Platform\OrchidServiceProvider;
 use Orchid\Screen\Actions\Menu;
 use Orchid\Support\Color;
 
+
 class PlatformProvider extends OrchidServiceProvider
 {
     /**
@@ -40,6 +41,10 @@ class PlatformProvider extends OrchidServiceProvider
                     Menu::make('Sub element item 1')->icon('bag'),
                     Menu::make('Sub element item 2')->icon('heart'),
                 ]),
+
+            Menu::make('Idea Screen')
+                ->icon('monitor')
+                ->route('platform.screens.idea'),
 
             Menu::make('Basic Elements')
                 ->title('Form controls')

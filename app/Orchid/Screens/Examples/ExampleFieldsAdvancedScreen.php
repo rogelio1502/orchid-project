@@ -22,6 +22,7 @@ use Orchid\Screen\Fields\Upload;
 use Orchid\Screen\Fields\UTM;
 use Orchid\Screen\Screen;
 use Orchid\Support\Facades\Layout;
+use App\Orchid\Screens\TomSelect;
 
 class ExampleFieldsAdvancedScreen extends Screen
 {
@@ -58,7 +59,7 @@ class ExampleFieldsAdvancedScreen extends Screen
      */
     public function description(): ?string
     {
-        return 'Examples for creating a wide variety of forms.';
+        return 'Examples for creating a wide variety of foms.';
     }
 
     /**
@@ -186,7 +187,7 @@ class ExampleFieldsAdvancedScreen extends Screen
 
             Layout::columns([
                 Layout::rows([
-                    Select::make('robot.')
+                    TomSelect::make('robot.')
                         ->options([
                             'index'   => 'Index',
                             'noindex' => 'No index',
